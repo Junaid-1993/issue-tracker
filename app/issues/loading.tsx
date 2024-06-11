@@ -12,7 +12,7 @@ const LoadingIssuesPage = () => {
     <div>
       <IssueActions />
 
-      <Table.Root variant="surface" layout="auto">
+      <Table.Root variant="surface">
         <Table.Header>
           <Table.Row>
             <Table.ColumnHeaderCell>Issue</Table.ColumnHeaderCell>
