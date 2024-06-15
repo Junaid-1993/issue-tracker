@@ -40,4 +40,7 @@ const IssuesPage = async () => {
   );
 };
 
+// To tell Next.js to 'disable static rendering' for this component at build time and 'enforce dynamic reordering'.
+export const dynamic = "force-dynamic";
+
 export default IssuesPage;

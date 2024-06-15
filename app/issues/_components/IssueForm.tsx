@@ -40,6 +40,8 @@ const IssueForm = ({ issue }: { issue?: Issue }) => {
       else await axios.post("/api/issues", data);
       // Redirecting user to 'issues' page
       router.push("/issues");
+      // To tell Next.js to refresh the content of the current route. '/issues' in this case.
+      router.refresh();
     } catch (error) {
       setSubmitting(false);
       setError("An unexpected error has occurred.");
