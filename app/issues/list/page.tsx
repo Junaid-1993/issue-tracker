@@ -4,6 +4,7 @@ import { Flex } from "@radix-ui/themes";
 import IssueActions from "./IssueActions";
 import Pagination from "@/app/components/Pagination";
 import IssueTable, { columnNames, IssueQuery } from "./IssueTable";
+import { Metadata } from "next";
 
 interface Props {
   searchParams: IssueQuery;
@@ -41,5 +42,10 @@ const IssuesPage = async ({ searchParams }: Props) => {
 
 // To tell Next.js to 'disable static rendering' for this component at build time and 'enforce dynamic reordering'.
 export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+  title: "Issue Tracker - Issue List",
+  description: "View all project issues",
+};
 
 export default IssuesPage;
