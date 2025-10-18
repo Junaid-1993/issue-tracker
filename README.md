@@ -1,3 +1,5 @@
+A full-stack web app for managing issues, featuring a dynamic dashboard, user authentication, filtering, pagination, form validation, and real-time UI feedback
+
 ## Getting Started
 
 This is the completed source code for the issue tracker project I built in my Ultimate Next.js series. 
